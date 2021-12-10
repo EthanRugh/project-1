@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', sans-serif ;
+}
+
+header{
+    background-color: #2B2D42;
+    color: #BCBEDC;
+}
+
+body{
+    background-color: rgb(237,241,245);
+}
+
+h1{
+text-align: center;
+font-size: 58px;
+}
+
+.search-form{
+    padding-top: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.form-input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 40px;
+    margin: 8px 0;
+    font-size: 20px;
+}
+.btn{
+    border-radius: 5px;
+    font-size: 24px;
+    background-color: rgb(243, 240, 240);
+    padding: 10px 24px ;
+}
