@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self' https://ajax.googleapis.com https://api.trace.moe; img-src https://*; child-src https://media.trace.moe;">
+
+    <title>trace.moe Functional Code</title>
+</head>
+
+<body>
+    
+
+        <form method="POST" enctype="multipart/form-data" id="reverse-img-form">
+            <input type="file" name="image" id="upload-image"/>
+            <input type="submit" id="submit" />
+        </form>
+      <div id="filename"></div>
+      <div id="episode"></div>
+      <img src="" id="image">
+      <iframe src="" id="video"></iframe>
+        
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="./script.js"></script>
+  </body>
+</html>
