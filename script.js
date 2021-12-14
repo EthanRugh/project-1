@@ -22,8 +22,9 @@ function imageSearch(form) {
       const jsonData = JSON.parse(response);
       filenameEl.innerHTML = "Show: " + jsonData.result[0].filename;
       episodeEl.innerHTML = "Episode: " + jsonData.result[0].episode;
-      document.getElementById("image").src = jsonData.result[0].image; 
-      document.getElementById("video").src = jsonData.result[0].video; 
+      imageEl.src = jsonData.result[0].image; 
+      videoEl.src = jsonData.result[0].video; 
+      videoEl.classList.remove("d-none");
   });
 }
 
