@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy"
+  content="default-src 'self' https://api.jikan.moe https://stackpath.bootstrapcdn.com https://ajax.googleapis.com https://api.trace.moe; img-src https://*; child-src https://media.trace.moe; media-src https://media.trace.moe">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="./assets/css/style.css">
+  <title>trace.moe Functional Code</title>
+</head>
+
+<body>
+
+  <header>
+    My Anime Finder
+  </header>
+
+  <h3>How To Search</h3>
+  
+  <!--reverse image search-->
+  <div class= "img">
+    <div class="myimg">
+    <label for="">Reverse Image Search</label>
+  <form method="POST" enctype="multipart/form-data" id="reverse-img-file">
+      <input type="file" name="image" id="upload-image"/>
+      <input class="btn" type="submit" id="submit" />
+  </form>
+</div>
+
+    
+  <div id="filename"></div>
+  <div id="episode"></div> 
+    <div class = "d-flex fluid-container">
+      <img src="" id="image">
+      <video controls src="" id="video" class="d-none"></video>
+    </div>
+  </div>
+   
+
+  <!--title search-->
+  <div class="title">
+    <div class="myTitle">
+    <form>
+        <label for="">Search by Title</label>
+        <input placeholder="Anime Title" name="search" type="text" autofocus="true" id="form-search">
+        <button type="submit" class="btn" id="search-btn">Search</button>
+    </form>
+    <div id="info-hold">
+    </div>
+  </div>
+  </div>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="./assets/js/script.js"></script> 
+
+</body>
+</html>
