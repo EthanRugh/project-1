@@ -1,4 +1,3 @@
-
 filenameEl = document.getElementById("filename");
 episodeEl = document.getElementById("episode");
 imageEl = document.getElementById("image");
@@ -6,6 +5,11 @@ videoEl = document.getElementById("video");
 let searchBar = document.querySelector("#form-search");
 let searchBtn = document.querySelector("#search-btn");
 let infoHold = document.querySelector("#info-hold");
+let title = document.createElement("h3");
+let rating = document.createElement("p")
+let epi = document.createElement("p");
+let score = document.createElement("p");
+let synops = document.createElement("p");
 
 let getAnime = function(animeShow) {
     var searchApiUrl = "https://api.jikan.moe/v3/search/anime?q=" + animeShow;
@@ -21,15 +25,11 @@ let getAnime = function(animeShow) {
 
 let infoHandler = function(data) {
     console.log(data);
-    let title = document.createElement("h3")
+    
     title.textContent = "Title: " + data.results[0].title
-    let rating = document.createElement("p")
     rating.textContent = "Rating: " + data.results[0].rated 
-    let epi = document.createElement("p")
     epi.textContent = "Episodes: " + data.results[0].episodes
-    let score = document.createElement("p")
     score.textContent = "Overall Score: " + data.results[0].score
-    let synops = document.createElement("p")
     synops.textContent = "Description: " + data.results[0].synopsis
 
     infoHold.appendChild(title);
@@ -42,6 +42,11 @@ let infoHandler = function(data) {
 $("#title-search").submit(function(event){ {
     event.preventDefault();
     let animeShow = searchBar.value.trim();
+    title.textContent = "";
+    rating.textContent = "";
+    epi.textContent = "";
+    score.textContent = "";
+    synops.textContent = "";
     getAnime(animeShow);
 }
 })
