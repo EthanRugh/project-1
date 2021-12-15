@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy"
+  content="default-src 'self' https://stackpath.bootstrapcdn.com https://ajax.googleapis.com https://api.trace.moe; img-src https://*; child-src https://media.trace.moe; media-src https://media.trace.moe">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>trace.moe Functional Code</title>
 </head>
+
 <body>
+  <form method="POST" enctype="multipart/form-data" id="reverse-img-file">
+      <input type="file" name="image" id="upload-image"/>
+      <input type="submit" id="submit" />
+  </form>
+    
+  <div id="filename"></div>
+  <div id="episode"></div> 
+    <div class = "d-flex fluid-container">
+      <img src="" id="image">
+      <video controls src="" id="video" class="d-none"></video>
+    </div>
+
     <form>
         <input placeholder="Anime Title" name="search" type="text" autofocus="true" id="form-search">
         <button type="submit" id="search-btn">Search</button>
@@ -14,6 +33,9 @@
     <div id="info-hold">
 
     </div>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="./assets/js/script.js"></script> 
+
 </body>
 </html>
