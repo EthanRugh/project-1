@@ -37,7 +37,6 @@ let infoHandler = function(data) {
 var searchBarHandler = function(event) {
     event.preventDefault();
     let animeShow = searchBar.value.trim();
-    console.log(animeShow)
     getAnime(animeShow);
 }
 searchBtn.addEventListener("click", searchBarHandler);
