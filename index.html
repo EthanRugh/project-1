@@ -8,9 +8,9 @@
   <meta http-equiv="Content-Security-Policy"
   content="default-src 'self' https://fonts.googleapis.com https://raw.github.com https://api.jikan.moe  https://* https://stackpath.bootstrapcdn.com https://ajax.googleapis.com https://api.trace.moe; img-src https://*; child-src https://media.trace.moe; media-src https://media.trace.moe">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
    <link rel="stylesheet" href="./assets/css/style.css">
-  <title>trace.moe Functional Code</title>
+  <title>My Anime Finder</title>
 </head>
 
 <body>
@@ -19,7 +19,6 @@
     My Anime Finder
   </header>
 
-  <h3>How To Search</h3>
   
   <!--reverse image search-->
   <div id="wrap">
@@ -46,7 +45,7 @@
 
   <!--title search-->
   <div class="title">
-    <form>
+    <form id="title-search">
         <label for="">Search by Title</label>
         <input placeholder="Anime Title" name="search" type="text" autofocus="true" id="form-search">
         <div class="center-btn">

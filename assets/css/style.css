@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-/* @import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css); */
 
 
 /* global changes */
@@ -7,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Abel', sans-serif ;
+    font-size: 20px;
 }
 
 header{
@@ -19,7 +19,7 @@ header{
 }
 
 body{
-    background-color: rgb(237,241,245);
+    background-color: rgb(174, 226, 252);
 }
 
 /* end of global chnages */
@@ -42,7 +42,12 @@ padding: 22px 0 22px 0;
 }
 
 
-
+#wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+}
 .form-input{
     box-sizing: border-box;
     width: 100%;
@@ -53,26 +58,22 @@ padding: 22px 0 22px 0;
 
 
 
-.img{
+.img, .title{
     
     float: left;
-    margin-top: 15px;
-    padding: 136px 0 136px 0;
-    margin: 10px 10px 10px 10px;
-    border: solid;
-    border-color:#2B2D42 ;
-    text-align: center;
-}
-
-.title{
-
-    float: left;
     padding: 150px 20px;
-    margin: 10px;
+    margin: 50px;
     border: solid;
     border-color:#2B2D42;
+    background-color: rgb(0, 110, 166);
+    box-shadow: 10px 5px 5px black;
+    border-radius: 5px;
 }
 
+
+.d-none{
+    display: none;
+}
 
 /* btn edits */
 
@@ -89,6 +90,7 @@ padding: 22px 0 22px 0;
 .center-btn {
     justify-content: center;
     display: flex;
+    padding-top: 10px;
 }
 
 .btn:hover{
