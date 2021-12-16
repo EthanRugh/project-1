@@ -24,6 +24,7 @@ let getAnime = function(animeShow) {
 }
 
 let infoHandler = function(data) {
+
     
     title.textContent = "Title: " + data.results[0].title
     rating.textContent = "Rating: " + data.results[0].rated 
@@ -63,6 +64,7 @@ function imageSearch(form) {
   };
   
   $.ajax(settings).done(function (response) {
+
   })
   .done(function (response) {
       const jsonData = JSON.parse(response);
@@ -70,6 +72,7 @@ function imageSearch(form) {
       episodeEl.innerHTML = "Episode: " + jsonData.result[0].episode;
       imageEl.src = jsonData.result[0].image + "&size=m"; 
       videoEl.src = jsonData.result[0].video + "&size=m"; 
+
       videoEl.classList.remove("d-none");
   })
 }
