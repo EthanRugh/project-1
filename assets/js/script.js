@@ -1,4 +1,3 @@
-
 filenameEl = document.getElementById("filename");
 episodeEl = document.getElementById("episode");
 imageEl = document.getElementById("image");
