@@ -24,7 +24,7 @@ let getAnime = function(animeShow) {
 }
 
 let infoHandler = function(data) {
-    console.log(data);
+
     
     title.textContent = "Title: " + data.results[0].title
     rating.textContent = "Rating: " + data.results[0].rated 
@@ -64,14 +64,15 @@ function imageSearch(form) {
   };
   
   $.ajax(settings).done(function (response) {
-    console.log(response);
+
   })
   .done(function (response) {
       const jsonData = JSON.parse(response);
       filenameEl.innerHTML = "Show: " + jsonData.result[0].filename;
       episodeEl.innerHTML = "Episode: " + jsonData.result[0].episode;
-      imageEl.src = jsonData.result[0].image + "&size=l"; 
-      videoEl.src = jsonData.result[0].video + "&size=l"; 
+      imageEl.src = jsonData.result[0].image + "&size=m"; 
+      videoEl.src = jsonData.result[0].video + "&size=m"; 
+
       videoEl.classList.remove("d-none");
   })
 }
